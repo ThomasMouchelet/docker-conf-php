@@ -1,4 +1,7 @@
 version: '3.8'
+volumes:
+  db-data:
+    driver: local
 services:
     web:
         image: nginx:latest
@@ -28,6 +31,8 @@ services:
             MYSQL_PASSWORD: root
         ports:
             - '3306'
+        volumes:
+            - db-data:/var/lib/mysql
 
     phpmyadmin:
         depends_on: 
