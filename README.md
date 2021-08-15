@@ -1,9 +1,9 @@
 ### CONFIG
-php 8.0.9
-nginx
-mysql
-phpmyadmin
-mercure
+- php 8.0.9
+- nginx
+- mysql
+- phpmyadmin
+- mercure
 
 ### GET STARTED
 
